@@ -1,25 +1,51 @@
-# Ember-cli-static
+# ember-cli-static
 
-This README outlines the details of collaborating on this Ember addon.
+An addon for [Ember CLI][cli] that precompiles static page content from
+[Markdown][md] and [YAML Front Matter][yfm].
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Use [Ember CLI][cli] to install this addon to your app:
+
+```bash
+$ ember install ember-cli-static
+```
+
+## Usage
+
+Generate a static page from within your app:
+
+```bash
+$ ember generate page TITLE
+```
+
+Create a route to the `page` component:
+
+```javascript
+Router.map(function() {
+  this.route('page', { path: '/:id' });
+});
+```
+
+Start your server and browse to <http://localhost:4200/TITLE> to see
+your page in action.
 
 ## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+To start the development server:
+
+```bash
+$ make
+```
 
 ## Running Tests
 
-* `ember test`
-* `ember test --server`
+To run all QUnit and CasperJS tests:
 
-## Building
+```bash
+$ make test
+```
 
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+[cli]: http://ember-cli.com
+[md]: http://daringfireball.net/projects/markdown/syntax
+[yfm]: http://jekyllrb.com/docs/frontmatter/
