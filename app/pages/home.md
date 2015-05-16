@@ -48,14 +48,14 @@ So down, so down, so down, yeah
 
 ## Outro
 
-  You know where you are?
-  You're down in the jungle baby, you're gonna dieee
-  In the jungle welcome to the jungle
-  Watch it bring you to your knees, knees
-  In the jungle welcome to the jungle
-  Feel my, my, my serpentine
-  In the jungle welcome to the jungle
-  Watch it bring you to your knees, knees
-  In the jungle welcome to the jungle
-  Watch it bring you to you
-  Its gonna bring you down, ha!!
+You know where you are?
+You're down in the jungle baby, you're gonna dieee
+In the jungle welcome to the jungle
+Watch it bring you to your knees, knees
+In the jungle welcome to the jungle
+Feel my, my, my serpentine
+In the jungle welcome to the jungle
+Watch it bring you to your knees, knees
+In the jungle welcome to the jungle
+Watch it bring you to you
+Its gonna bring you down, ha!!
