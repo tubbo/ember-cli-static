@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-static",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Static page generator for Ember applications",
   "directories": {
     "doc": "doc",
@@ -11,6 +11,7 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
+  "main": "index.js",
   "repository": "https://github.com/tubbo/ember-cli-static.git",
   "engines": {
     "node": ">= 0.10.0"
