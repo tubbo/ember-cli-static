@@ -1,9 +1,12 @@
 .PHONY: all clean watch test deps
 
-all: watch
+all: clean dist
+
+dist: deps
+	ember build
 
 clean:
-	rm -rf node_modules bower_components
+	rm -rf dist
 
 node_modules:
 	npm install
