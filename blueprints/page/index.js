@@ -1,14 +1,16 @@
+var titleize = require('titleize');
+
 module.exports = {
-  description: 'Generate a static page'
+  description: 'Generate a static page',
 
-  // locals: function(options) {
-  //   // Return custom template variables here.
-  //   return {
-  //     foo: options.entity.options.foo
-  //   };
-  // }
+  availableOptions: {
+    name: 'page-name'
+  }
 
-  // afterInstall: function(options) {
-  //   // Perform extra work here.
-  // }
+  locals: function(options) {
+    return {
+      title: titleize(options.title),
+      filename: options.name
+    }
+  }
 };

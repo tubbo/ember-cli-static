@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-static",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Static page generator for Ember applications",
   "directories": {
     "doc": "doc",
@@ -49,6 +49,7 @@
     "merge": "^1.2.0",
     "mkdirp": "^0.5.1",
     "parameterize": "0.0.7",
+    "titleize": "^1.0.0",
     "truncate": "^1.0.4"
   },
   "ember-addon": {
