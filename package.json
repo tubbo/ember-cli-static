@@ -46,10 +46,13 @@
     "ember-cli-htmlbars": "0.7.6",
     "front-matter": "^1.0.0",
     "marked": "^0.3.3",
+    "merge": "^1.2.0",
     "mkdirp": "^0.5.1",
-    "parameterize": "0.0.7"
+    "parameterize": "0.0.7",
+    "truncate": "^1.0.4"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "main": "index.js"
   }
 }
