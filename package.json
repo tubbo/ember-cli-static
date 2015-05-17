@@ -46,6 +46,7 @@
     "front-matter": "^1.0.0",
     "marked": "^0.3.3",
     "mkdirp": "^0.5.1",
+    "parameterize": "0.0.7"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
