@@ -5,8 +5,16 @@ moduleForModel('page', 'Unit | Model | page', {
   needs: []
 });
 
-test('it exists', function(assert) {
-  var model = this.subject();
-  // var store = this.store();
-  assert.ok(!!model);
+test('it has a title', function(assert) {
+  var model = this.subject({
+    title: 'page title'
+  });
+  assert.equal('page title', model.get('title'));
+});
+
+test('it has an html body', function(assert) {
+  var model = this.subject({
+    body: '<p>compiled <strong>html</strong> body</p>'
+  });
+  assert.equal('<p>compiled <strong>html</strong> body</p>', model.get('body'));
 });
