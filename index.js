@@ -1,17 +1,29 @@
 /* jshint node: true */
 'use strict';
 
-var PageTree = require('./lib/page-tree'),
-    funnel = require('broccoli-funnel'),
-    mergeTrees = require('broccoli-merge-trees');
+var Compiler = require('./lib/compiler'),
+    fs = require('fs'),
+    path = require('path');
 
 module.exports = {
   name: 'ember-cli-static',
 
-  treeForPublic: function(tree) {
-    this._requireBuildPackages();
-    var pageTree = new PageTree(funnel('app', { srcDir: 'pages', destDir: 'pages' }));
+  options: {
+    resources: ['pages']
+  },
 
-    mergeTrees([ tree, pageTree ]);
+  included: function(app) {
+
+    this.options.resources.forEach(function(resource) {
+      var pages = [];
+
+      fs.readdir(path.join('app', resource), function(file) {
+        var page = new Compiler(resource, path.basename(file));
+        pages.push(page.attributes);
+        page.write();
+      });
+
+      fs.writeFile('public/'+resource+'.json', pages.toJSON());
+    });
   }
 };

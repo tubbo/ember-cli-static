@@ -41,15 +41,11 @@
     "octopress"
   ],
   "dependencies": {
-    "broccoli-caching-writer": "^0.5.5",
-    "broccoli-funnel": "^0.2.3",
-    "broccoli-merge-trees": "^0.2.1",
     "ember-cli-babel": "^5.0.0",
     "ember-cli-htmlbars": "0.7.6",
     "front-matter": "^1.0.0",
     "marked": "^0.3.3",
     "mkdirp": "^0.5.1",
-    "rsvp": "^3.0.18"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
